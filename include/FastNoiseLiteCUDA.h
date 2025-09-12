@@ -800,7 +800,7 @@ public:
 	/// Noise output bounded between -1...1
 	/// </returns>
 	template<typename FNfloat>
-	float GetNoise(FNfloat x, FNfloat y, FNfloat z) const {
+	NOISE_DH float GetNoise(FNfloat x, FNfloat y, FNfloat z) const {
 		Arguments_must_be_floating_point_values<FNfloat>();
 
 		TransformNoiseCoordinate(x, y, z);
