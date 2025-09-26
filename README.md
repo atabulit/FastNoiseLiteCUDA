@@ -17,8 +17,6 @@ To make the library compatible with CUDA, several key changes were made to the o
     *   These arrays are declared in `__constant__` memory using the `NOISE_CONSTANT` macro. Constant memory is a cached, read-only memory space on the GPU, making it highly efficient for data that is accessed uniformly by all threads in a warp.
     *   A new `FastNoise` namespace now contains the `Lookup` struct, which safely references these constant memory arrays. This restructuring resolves compilation errors while improving performance on the GPU.
 
-*   **CUDA Math Library**: The standard `<cmath>` header has been replaced with `<cuda/cmath>` to ensure that math functions like `sqrtf` are correctly resolved to their optimized device-side implementations when compiled for the GPU.
-
 ## Usage
 
 Include the `FastNoiseLiteCUDA.h` header in your `.cu` file. You can then instantiate and use the `FastNoiseLite` object directly inside your CUDA kernels.

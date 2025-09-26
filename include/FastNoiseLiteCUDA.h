@@ -50,13 +50,13 @@
 
 #ifndef FASTNOISELITECUDA_H
 #define FASTNOISELITECUDA_H
-#include <cuda/cmath>
+#include <cmath>
 
 #ifdef __CUDACC__
 #define NOISE_DH __device__ __host__
 #define NOISE_DEVICE __device__
 #define NOISE_CONSTANT __constant__
-#elifndef __CUDACC__
+#else
 #define NOISE_DH
 #define NOISE_DEVICE
 #define NOISE_CONSTANT
