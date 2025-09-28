@@ -22,26 +22,39 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// .'',;:cldxkO00KKXXNNWWWNNXKOkxdollcc::::::;:::ccllloooolllllllllooollc:,'...        ...........',;cldxkO000Okxdlc::;;;,,;;;::cclllllll
-// ..',;:ldxO0KXXNNNNNNNNXXK0kxdolcc::::::;;;,,,,,,;;;;;;;;;;:::cclllllc:;'....       ...........',;:ldxO0KXXXK0Okxdolc::;;;;::cllodddddo
+// .'',;:cldxkO00KKXXNNWWWNNXKOkxdollcc::::::;:::ccllloooolllllllllooollc:,'...
+// ...........',;cldxkO000Okxdlc::;;;,,;;;::cclllllll
+// ..',;:ldxO0KXXNNNNNNNNXXK0kxdolcc::::::;;;,,,,,,;;;;;;;;;;:::cclllllc:;'....
+// ...........',;:ldxO0KXXXK0Okxdolc::;;;;::cllodddddo
 // ...',:loxO0KXNNNNNXXKK0Okxdolc::;::::::::;;;,,'''''.....''',;:clllllc:;,'............''''''''',;:loxO0KXNNNNNXK0Okxdollccccllodxxxxxxd
-// ....';:ldkO0KXXXKK00Okxdolcc:;;;;;::cclllcc:;;,''..... ....',;clooddolcc:;;;;,,;;;;;::::;;;;;;:cloxk0KXNWWWWWWNXKK0Okxddoooddxxkkkkkxx
-// .....';:ldxkOOOOOkxxdolcc:;;;,,,;;:cllooooolcc:;'...      ..,:codxkkkxddooollloooooooollcc:::::clodkO0KXNWWWWWWNNXK00Okxxxxxxxxkkkkxxx
-// . ....';:cloddddo___________,,,,;;:clooddddoolc:,...      ..,:ldx__00OOOkkk___kkkkkkxxdollc::::cclodkO0KXXNNNNNNXXK0OOkxxxxxxxxxxxxddd
-// .......',;:cccc:|           |,,,;;:cclooddddoll:;'..     ..';cox|  \KKK000|   |KK00OOkxdocc___;::clldxxkO0KKKKK00Okkxdddddddddddddddoo
-// .......'',,,,,''|   ________|',,;;::cclloooooolc:;'......___:ldk|   \KK000|   |XKKK0Okxolc|   |;;::cclodxxkkkkxxdoolllcclllooodddooooo
-// ''......''''....|   |  ....'',,,,;;;::cclloooollc:;,''.'|   |oxk|    \OOO0|   |KKK00Oxdoll|___|;;;;;::ccllllllcc::;;,,;;;:cclloooooooo
-// ;;,''.......... |   |_____',,;;;____:___cllo________.___|   |___|     \xkk|   |KK_______ool___:::;________;;;_______...'',;;:ccclllloo
-// c:;,''......... |         |:::/     '   |lo/        |           |      \dx|   |0/       \d|   |cc/        |'/       \......',,;;:ccllo
-// ol:;,'..........|    _____|ll/    __    |o/   ______|____    ___|   |   \o|   |/   ___   \|   |o/   ______|/   ___   \ .......'',;:clo
-// dlc;,...........|   |::clooo|    /  |   |x\___   \KXKKK0|   |dol|   |\   \|   |   |   |   |   |d\___   \..|   |  /   /       ....',:cl
-// xoc;'...  .....'|   |llodddd|    \__|   |_____\   \KKK0O|   |lc:|   |'\       |   |___|   |   |_____\   \.|   |_/___/...      ...',;:c
-// dlc;'... ....',;|   |oddddddo\          |          |Okkx|   |::;|   |..\      |\         /|   |          | \         |...    ....',;:c
+// ....';:ldkO0KXXXKK00Okxdolcc:;;;;;::cclllcc:;;,''.....
+// ....',;clooddolcc:;;;;,,;;;;;::::;;;;;;:cloxk0KXNWWWWWWNXKK0Okxddoooddxxkkkkkxx
+// .....';:ldxkOOOOOkxxdolcc:;;;,,,;;:cllooooolcc:;'...
+// ..,:codxkkkxddooollloooooooollcc:::::clodkO0KXNWWWWWWNNXK00Okxxxxxxxxkkkkxxx .
+// ....';:cloddddo___________,,,,;;:clooddddoolc:,...
+// ..,:ldx__00OOOkkk___kkkkkkxxdollc::::cclodkO0KXXNNNNNNXXK0OOkxxxxxxxxxxxxddd
+// .......',;:cccc:|           |,,,;;:cclooddddoll:;'..     ..';cox|  \KKK000|
+// |KK00OOkxdocc___;::clldxxkO0KKKKK00Okkxdddddddddddddddoo
+// .......'',,,,,''|   ________|',,;;::cclloooooolc:;'......___:ldk|   \KK000|   |XKKK0Okxolc|
+// |;;::cclodxxkkkkxxdoolllcclllooodddooooo
+// ''......''''....|   |  ....'',,,,;;;::cclloooollc:;,''.'|   |oxk|    \OOO0|
+// |KKK00Oxdoll|___|;;;;;::ccllllllcc::;;,,;;;:cclloooooooo
+// ;;,''.......... |   |_____',,;;;____:___cllo________.___|   |___|     \xkk|
+// |KK_______ool___:::;________;;;_______...'',;;:ccclllloo c:;,''......... |         |:::/     '
+// |lo/        | | \dx| |0/       \d|   |cc/        |'/       \......',,;;:ccllo ol:;,'..........|
+// _____|ll/    __    |o/   ______|____
+// ___|   |   \o|   |/   ___   \|   |o/   ______|/   ___   \ .......'',;:clo dlc;,...........|
+// |::clooo|    /  | |x\___   \KXKKK0|   |dol|   |\   \|   |   |   |   |   |d\___   \..|   |  /   /
+// ....',:cl xoc;'...  .....'| |llodddd|    \__|   |_____\   \KKK0O|   |lc:|   |'\       |   |___|
+// |   |_____\   \.|   |_/___/...      ...',;:c dlc;'... ....',;|   |oddddddo\          | |Okkx|
+// |::;|   |..\      |\         /|   |          |
+// \         |...    ....',;:c
 // ol:,'.......',:c|___|xxxddollc\_____,___|_________/ddoll|___|,,,|___|...\_____|:\ ______/l|___|_________/...\________|'........',;::cc
 // c:;'.......';:codxxkkkkxxolc::;::clodxkOO0OOkkxdollc::;;,,''''',,,,''''''''''',,'''''',;:loxkkOOkxol:;,'''',,;:ccllcc:;,'''''',;::ccll
 // ;,'.......',:codxkOO0OOkxdlc:;,,;;:cldxxkkxxdolc:;;,,''.....'',;;:::;;,,,'''''........,;cldkO0KK0Okdoc::;;::cloodddoolc:;;;;;::ccllooo
 // .........',;:lodxOO0000Okdoc:,,',,;:clloddoolc:;,''.......'',;:clooollc:;;,,''.......',:ldkOKXNNXX0Oxdolllloddxxxxxxdolccccccllooodddd
-// .    .....';:cldxkO0000Okxol:;,''',,;::cccc:;,,'.......'',;:cldxxkkxxdolc:;;,'.......';coxOKXNWWWNXKOkxddddxxkkkkkkxdoollllooddxxxxkkk
+// .
+// .....';:cldxkO0000Okxol:;,''',,;::cccc:;,,'.......'',;:cldxxkkxxdolc:;;,'.......';coxOKXNWWWNXKOkxddddxxkkkkkkxdoollllooddxxxxkkk
 //       ....',;:codxkO000OOxdoc:;,''',,,;;;;,''.......',,;:clodkO00000Okxolc::;,,''..',;:ldxOKXNWWWNNK0OkkkkkkkkkkkxxddooooodxxkOOOOO000
 //       ....',;;clodxkkOOOkkdolc:;,,,,,,,,'..........,;:clodxkO0KKXKK0Okxdolcc::;;,,,;;:codkO0XXNNNNXKK0OOOOOkkkkxxdoollloodxkO0KKKXXXXX
 //
@@ -63,10 +76,10 @@
 #endif
 
 namespace detail {
-constexpr int					   GRADIENTS_2D_SIZE				= 256 * 2;
-constexpr int					   GRADIENTS_3D_SIZE				= 256 * 3;
-constexpr int					   RANDVECS_2D_SIZE					= 256 * 2;
-constexpr int					   RANDVECS_3D_SIZE					= 256 * 4;
+static inline constexpr int		   GRADIENTS_2D_SIZE				= 256 * 2;
+static inline constexpr int		   GRADIENTS_3D_SIZE				= 256 * 3;
+static inline constexpr int		   RANDVECS_2D_SIZE					= 256 * 2;
+static inline constexpr int		   RANDVECS_3D_SIZE					= 256 * 4;
 static inline NOISE_CONSTANT float c_Gradients2D[GRADIENTS_2D_SIZE] = {
 	0.130526192220052f,	 0.99144486137381f,	  0.38268343236509f,   0.923879532511287f,
 	0.608761429008721f,	 0.793353340291235f,  0.793353340291235f,  0.608761429008721f,
@@ -512,25 +525,28 @@ static inline NOISE_CONSTANT float c_RandVecs3D[RANDVECS_3D_SIZE] = {
 namespace FastNoise {
 template<typename T>
 struct Lookup {
-	static NOISE_DEVICE const float (&Gradients2D)[detail::GRADIENTS_2D_SIZE];
-	static NOISE_DEVICE const float (&Gradients3D)[detail::GRADIENTS_3D_SIZE];
-	static NOISE_DEVICE const float (&RandVecs2D)[detail::RANDVECS_2D_SIZE];
-	static NOISE_DEVICE const float (&RandVecs3D)[detail::RANDVECS_3D_SIZE];
+	static const float (&Gradients2D)[detail::GRADIENTS_2D_SIZE];
+	static const float (&Gradients3D)[detail::GRADIENTS_3D_SIZE];
+	static const float (&RandVecs2D)[detail::RANDVECS_2D_SIZE];
+	static const float (&RandVecs3D)[detail::RANDVECS_3D_SIZE];
 };
 
 template<>
-NOISE_DEVICE const float (&FastNoise::Lookup<float>::Gradients2D)[detail::GRADIENTS_2D_SIZE] =
+const float (&FastNoise::Lookup<float>::Gradients2D)[detail::GRADIENTS_2D_SIZE] =
 	detail::c_Gradients2D;
 template<>
-NOISE_DEVICE const float (&FastNoise::Lookup<float>::Gradients3D)[detail::GRADIENTS_3D_SIZE] =
+const float (&FastNoise::Lookup<float>::Gradients3D)[detail::GRADIENTS_3D_SIZE] =
 	detail::c_Gradients3D;
 template<>
-NOISE_DEVICE const float (&FastNoise::Lookup<float>::RandVecs2D)[detail::RANDVECS_2D_SIZE] =
+const float (&FastNoise::Lookup<float>::RandVecs2D)[detail::RANDVECS_2D_SIZE] =
 	detail::c_RandVecs2D;
 template<>
-NOISE_DEVICE const float (&FastNoise::Lookup<float>::RandVecs3D)[detail::RANDVECS_3D_SIZE] =
+const float (&FastNoise::Lookup<float>::RandVecs3D)[detail::RANDVECS_3D_SIZE] =
 	detail::c_RandVecs3D;
 } // namespace FastNoise
+
+template<typename T>
+concept Arguments_must_be_floating_point_values = std::is_floating_point_v<T>;
 
 class FastNoiseLite {
 public:
@@ -776,9 +792,9 @@ public:
 	/// Noise output bounded between -1...1
 	/// </returns>
 	template<typename FNfloat>
-	NOISE_DH float GetNoise(FNfloat x, FNfloat y) const {
-		Arguments_must_be_floating_point_values<FNfloat>();
-
+	NOISE_DH float GetNoise(FNfloat x, FNfloat y) const
+		requires(Arguments_must_be_floating_point_values<FNfloat>)
+	{
 		TransformNoiseCoordinate(x, y);
 
 		switch (mFractalType) {
@@ -801,8 +817,6 @@ public:
 	/// </returns>
 	template<typename FNfloat>
 	NOISE_DH float GetNoise(FNfloat x, FNfloat y, FNfloat z) const {
-		Arguments_must_be_floating_point_values<FNfloat>();
-
 		TransformNoiseCoordinate(x, y, z);
 
 		switch (mFractalType) {
@@ -826,9 +840,9 @@ public:
 	/// noise = GetNoise(x, y)</code>
 	/// </example>
 	template<typename FNfloat>
-	NOISE_DH void DomainWarp(FNfloat& x, FNfloat& y) const {
-		Arguments_must_be_floating_point_values<FNfloat>();
-
+	NOISE_DH void DomainWarp(FNfloat &x, FNfloat &y) const
+		requires(Arguments_must_be_floating_point_values<FNfloat>)
+	{
 		switch (mFractalType) {
 		default:
 			DomainWarpSingle(x, y);
@@ -851,9 +865,9 @@ public:
 	/// noise = GetNoise(x, y, z)</code>
 	/// </example>
 	template<typename FNfloat>
-	NOISE_DH void DomainWarp(FNfloat& x, FNfloat& y, FNfloat& z) const {
-		Arguments_must_be_floating_point_values<FNfloat>();
-
+	NOISE_DH void DomainWarp(FNfloat &x, FNfloat &y, FNfloat &z) const
+		requires(Arguments_must_be_floating_point_values<FNfloat>)
+	{
 		switch (mFractalType) {
 		default:
 			DomainWarpSingle(x, y, z);
@@ -868,9 +882,6 @@ public:
 	}
 
 private:
-	template<typename T>
-	struct Arguments_must_be_floating_point_values;
-
 	enum TransformType3D {
 		TransformType3D_None,
 		TransformType3D_ImproveXYPlanes,
@@ -1019,15 +1030,15 @@ private:
 		return xd * xg + yd * yg + zd * zg;
 	}
 
-	NOISE_DH void GradCoordOut(int seed, int xPrimed, int yPrimed, float& xo, float& yo) const {
+	NOISE_DH void GradCoordOut(int seed, int xPrimed, int yPrimed, float &xo, float &yo) const {
 		int hash = Hash(seed, xPrimed, yPrimed) & (255 << 1);
 
 		xo = FastNoise::Lookup<float>::RandVecs2D[hash];
 		yo = FastNoise::Lookup<float>::RandVecs2D[hash | 1];
 	}
 
-	NOISE_DH void GradCoordOut(int seed, int xPrimed, int yPrimed, int zPrimed, float& xo,
-							   float& yo, float& zo) const {
+	NOISE_DH void GradCoordOut(int seed, int xPrimed, int yPrimed, int zPrimed, float &xo,
+							   float &yo, float &zo) const {
 		int hash = Hash(seed, xPrimed, yPrimed, zPrimed) & (255 << 2);
 
 		xo = FastNoise::Lookup<float>::RandVecs3D[hash];
@@ -1035,8 +1046,8 @@ private:
 		zo = FastNoise::Lookup<float>::RandVecs3D[hash | 2];
 	}
 
-	NOISE_DH void GradCoordDual(int seed, int xPrimed, int yPrimed, float xd, float yd, float& xo,
-								float& yo) const {
+	NOISE_DH void GradCoordDual(int seed, int xPrimed, int yPrimed, float xd, float yd, float &xo,
+								float &yo) const {
 		int hash   = Hash(seed, xPrimed, yPrimed);
 		int index1 = hash & (127 << 1);
 		int index2 = (hash >> 7) & (255 << 1);
@@ -1053,7 +1064,7 @@ private:
 	}
 
 	NOISE_DH void GradCoordDual(int seed, int xPrimed, int yPrimed, int zPrimed, float xd, float yd,
-								float zd, float& xo, float& yo, float& zo) const {
+								float zd, float &xo, float &yo, float &zo) const {
 		int hash   = Hash(seed, xPrimed, yPrimed, zPrimed);
 		int index1 = hash & (63 << 2);
 		int index2 = (hash >> 6) & (255 << 2);
@@ -1117,7 +1128,7 @@ private:
 	// Noise Coordinate Transforms (frequency, and possible skew or rotation)
 
 	template<typename FNfloat>
-	NOISE_DH void TransformNoiseCoordinate(FNfloat& x, FNfloat& y) const {
+	NOISE_DH void TransformNoiseCoordinate(FNfloat &x, FNfloat &y) const {
 		x *= mFrequency;
 		y *= mFrequency;
 
@@ -1136,7 +1147,7 @@ private:
 	}
 
 	template<typename FNfloat>
-	NOISE_DH void TransformNoiseCoordinate(FNfloat& x, FNfloat& y, FNfloat& z) const {
+	NOISE_DH void TransformNoiseCoordinate(FNfloat &x, FNfloat &y, FNfloat &z) const {
 		x *= mFrequency;
 		y *= mFrequency;
 		z *= mFrequency;
@@ -1195,7 +1206,7 @@ private:
 	// Domain Warp Coordinate Transforms
 
 	template<typename FNfloat>
-	NOISE_DH void TransformDomainWarpCoordinate(FNfloat& x, FNfloat& y) const {
+	NOISE_DH void TransformDomainWarpCoordinate(FNfloat &x, FNfloat &y) const {
 		switch (mDomainWarpType) {
 		case DomainWarpType_OpenSimplex2:
 		case DomainWarpType_OpenSimplex2Reduced: {
@@ -1211,7 +1222,7 @@ private:
 	}
 
 	template<typename FNfloat>
-	NOISE_DH void TransformDomainWarpCoordinate(FNfloat& x, FNfloat& y, FNfloat& z) const {
+	NOISE_DH void TransformDomainWarpCoordinate(FNfloat &x, FNfloat &y, FNfloat &z) const {
 		switch (mWarpTransformType3D) {
 		case TransformType3D_ImproveXYPlanes: {
 			FNfloat xy = x + y;
@@ -2331,7 +2342,7 @@ private:
 
 	template<typename FNfloat>
 	NOISE_DH void DoSingleDomainWarp(int seed, float amp, float freq, FNfloat x, FNfloat y,
-									 FNfloat& xr, FNfloat& yr) const {
+									 FNfloat &xr, FNfloat &yr) const {
 		switch (mDomainWarpType) {
 		case DomainWarpType_OpenSimplex2:
 			SingleDomainWarpSimplexGradient(seed, amp * 38.283687591552734375f, freq, x, y, xr, yr,
@@ -2348,7 +2359,7 @@ private:
 
 	template<typename FNfloat>
 	NOISE_DH void DoSingleDomainWarp(int seed, float amp, float freq, FNfloat x, FNfloat y,
-									 FNfloat z, FNfloat& xr, FNfloat& yr, FNfloat& zr) const {
+									 FNfloat z, FNfloat &xr, FNfloat &yr, FNfloat &zr) const {
 		switch (mDomainWarpType) {
 		case DomainWarpType_OpenSimplex2:
 			SingleDomainWarpOpenSimplex2Gradient(seed, amp * 32.69428253173828125f, freq, x, y, z,
@@ -2367,7 +2378,7 @@ private:
 	// Domain Warp Single Wrapper
 
 	template<typename FNfloat>
-	NOISE_DH void DomainWarpSingle(FNfloat& x, FNfloat& y) const {
+	NOISE_DH void DomainWarpSingle(FNfloat &x, FNfloat &y) const {
 		int	  seed = mSeed;
 		float amp  = mDomainWarpAmp * mFractalBounding;
 		float freq = mFrequency;
@@ -2380,7 +2391,7 @@ private:
 	}
 
 	template<typename FNfloat>
-	NOISE_DH void DomainWarpSingle(FNfloat& x, FNfloat& y, FNfloat& z) const {
+	NOISE_DH void DomainWarpSingle(FNfloat &x, FNfloat &y, FNfloat &z) const {
 		int	  seed = mSeed;
 		float amp  = mDomainWarpAmp * mFractalBounding;
 		float freq = mFrequency;
@@ -2396,7 +2407,7 @@ private:
 	// Domain Warp Fractal Progressive
 
 	template<typename FNfloat>
-	NOISE_DH void DomainWarpFractalProgressive(FNfloat& x, FNfloat& y) const {
+	NOISE_DH void DomainWarpFractalProgressive(FNfloat &x, FNfloat &y) const {
 		int	  seed = mSeed;
 		float amp  = mDomainWarpAmp * mFractalBounding;
 		float freq = mFrequency;
@@ -2415,7 +2426,7 @@ private:
 	}
 
 	template<typename FNfloat>
-	NOISE_DH void DomainWarpFractalProgressive(FNfloat& x, FNfloat& y, FNfloat& z) const {
+	NOISE_DH void DomainWarpFractalProgressive(FNfloat &x, FNfloat &y, FNfloat &z) const {
 		int	  seed = mSeed;
 		float amp  = mDomainWarpAmp * mFractalBounding;
 		float freq = mFrequency;
@@ -2437,7 +2448,7 @@ private:
 	// Domain Warp Fractal Independant
 
 	template<typename FNfloat>
-	NOISE_DH void DomainWarpFractalIndependent(FNfloat& x, FNfloat& y) const {
+	NOISE_DH void DomainWarpFractalIndependent(FNfloat &x, FNfloat &y) const {
 		FNfloat xs = x;
 		FNfloat ys = y;
 		TransformDomainWarpCoordinate(xs, ys);
@@ -2456,7 +2467,7 @@ private:
 	}
 
 	template<typename FNfloat>
-	NOISE_DH void DomainWarpFractalIndependent(FNfloat& x, FNfloat& y, FNfloat& z) const {
+	NOISE_DH void DomainWarpFractalIndependent(FNfloat &x, FNfloat &y, FNfloat &z) const {
 		FNfloat xs = x;
 		FNfloat ys = y;
 		FNfloat zs = z;
@@ -2479,7 +2490,7 @@ private:
 
 	template<typename FNfloat>
 	NOISE_DH void SingleDomainWarpBasicGrid(int seed, float warpAmp, float frequency, FNfloat x,
-											FNfloat y, FNfloat& xr, FNfloat& yr) const {
+											FNfloat y, FNfloat &xr, FNfloat &yr) const {
 		FNfloat xf = x * frequency;
 		FNfloat yf = y * frequency;
 
@@ -2516,8 +2527,8 @@ private:
 
 	template<typename FNfloat>
 	NOISE_DH void SingleDomainWarpBasicGrid(int seed, float warpAmp, float frequency, FNfloat x,
-											FNfloat y, FNfloat z, FNfloat& xr, FNfloat& yr,
-											FNfloat& zr) const {
+											FNfloat y, FNfloat z, FNfloat &xr, FNfloat &yr,
+											FNfloat &zr) const {
 		FNfloat xf = x * frequency;
 		FNfloat yf = y * frequency;
 		FNfloat zf = z * frequency;
@@ -2590,7 +2601,7 @@ private:
 
 	template<typename FNfloat>
 	NOISE_DH void SingleDomainWarpSimplexGradient(int seed, float warpAmp, float frequency,
-												  FNfloat x, FNfloat y, FNfloat& xr, FNfloat& yr,
+												  FNfloat x, FNfloat y, FNfloat &xr, FNfloat &yr,
 												  bool outGradOnly) const {
 		const float SQRT3 = 1.7320508075688772935274463415059f;
 		const float G2	  = (3 - SQRT3) / 6;
@@ -2683,8 +2694,8 @@ private:
 
 	template<typename FNfloat>
 	NOISE_DH void SingleDomainWarpOpenSimplex2Gradient(int seed, float warpAmp, float frequency,
-													   FNfloat x, FNfloat y, FNfloat z, FNfloat& xr,
-													   FNfloat& yr, FNfloat& zr,
+													   FNfloat x, FNfloat y, FNfloat z, FNfloat &xr,
+													   FNfloat &yr, FNfloat &zr,
 													   bool outGradOnly) const {
 		x *= frequency;
 		y *= frequency;
@@ -2796,12 +2807,5 @@ private:
 		zr += vz * warpAmp;
 	}
 };
-
-template<>
-struct FastNoiseLite::Arguments_must_be_floating_point_values<float> {};
-template<>
-struct FastNoiseLite::Arguments_must_be_floating_point_values<double> {};
-template<>
-struct FastNoiseLite::Arguments_must_be_floating_point_values<long double> {};
 
 #endif // FASTNOISELITECUDA_H

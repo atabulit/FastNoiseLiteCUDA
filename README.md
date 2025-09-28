@@ -4,7 +4,8 @@ This is a CUDA-compatible wrapper for Auburn's popular [FastNoiseLite](https://g
 
 This port is designed to be a drop-in replacement for the original single-header file, enabling its use in both host (`__host__`) and device (`__device__`) code.
 
-**Please note:** The primary design pattern for this library is to configure a `FastNoiseLite` instance on the host (using its setter methods) and then use it within a CUDA kernel to generate noise. While the setters are `__host__` compatible, the core noise generation functions (`GetNoise`, `DomainWarp`) are intended solely for `__device__` execution. Their implementation relies on lookup tables stored in `__constant__` memory, a read-only, cached memory space accessible only by the GPU and not the host.
+**Please note:** While you can use setters for `FastNoiseLite` instance in any file, files compiled by `NVCC` that call `GetNoise` functions, **WILL NOT** execute correctly, since compiler replaces `NOISE_CONSTANT` macro with actual `__constant__` qualifier which then will turn out into access of memory stored on GPU by CPU. It's good to follow a practice where you configure your `FastNoiseLite` instance on CPU and then pass it to kernels, altgough if you are 100% sure the compiler you use for the current file will not add `__constant__` qualifier (which should only happen when compiling with `nvcc`), then you can call any function on host. 
+
 
 ## Key Modifications for CUDA Compatibility
 
