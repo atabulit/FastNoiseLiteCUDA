@@ -1,8 +1,29 @@
-# FastNoiseLiteCUDA
+#FastNoiseLiteCUDA
 
 This is a CUDA-compatible wrapper for Auburn's popular [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) library. It allows for the high-performance generation of various noise types directly on the GPU within CUDA kernels.
 
 This port is designed to be a drop-in replacement for the original single-header file, enabling its use in both host (`__host__`) and device (`__device__`) code.
+
+---
+
+## *Please note: A Critical Note on Host-Side Usage*
+
+The library's behavior changes depending on whether you are compiling a `.cu` file with NVCC or a standard `.cpp` file with a host compiler (like GCC/Clang/MSVC). This is crucial for understanding where you can safely call the `GetNoise` functions.
+
+The reason for this is the `NOISE_CONSTANT` macro, which places large lookup tables into `__constant__` GPU memory when processed by NVCC, but compiles them as regular CPU memory otherwise.
+
+*   **In `.cu` files (compiled with NVCC):**
+    Any function that uses the lookup tables (like `GetNoise`) is prepared by NVCC for device execution. If you call such a function from host code within a `.cu` file, the CPU will try to access the `__constant__` memory on the GPU, which is an illegal operation and **will not work**.
+    *   **Rule:** Inside `.cu` files, only configure `FastNoiseLite` on the host. Noise generation must happen inside a `__global__` kernel.
+
+*   **In `.cpp` files (or other non-NVCC compiled sources):**
+    When you include `FastNoiseLiteCUDA.h` in a standard `.cpp` file, `NOISE_CONSTANT` is empty. The lookup tables are just standard global arrays in CPU memory.
+    *   **Rule:** Inside `.cpp` files, you can safely use the **entire** `FastNoiseLite` object on the host, including calling `GetNoise`. This allows for CPU-based noise generation for testing or other logic.
+
+**Recommendation:**
+For consistency and to avoid mistakes, the best practice is to configure your `FastNoiseLite` instance on the CPU and then pass it by value to your kernels for noise generation, as shown in *Example 2*. Use host-side `GetNoise` calls from `.cpp` files only when you have a specific need for them.
+
+---
 
 ## Key Modifications for CUDA Compatibility
 
@@ -90,8 +111,7 @@ int main()
     host_noise_generator.SetFractalOctaves(5);
 
     dim3 threadsPerBlock(16, 16);
-    dim3 numBlocks((width + threadsPerBlock.x - 1) / threadsPerBlock.x, 
-                   (height + threadsPerBlock.y - 1) / threadsPerBlock.y);
+    dim3 numBlocks((width + threadsPerBlock.x - 1) / threadsPerBlock.x, (height + threadsPerBlock.y - 1) / threadsPerBlock.y);
 
     // 2. Pass the configured object by value to the kernel
     generate_noise_from_host_config<<<numBlocks, threadsPerBlock>>>(d_output, width, height, host_noise_generator);
