@@ -1,4 +1,4 @@
-#FastNoiseLiteCUDA
+# FastNoiseLiteCUDA
 
 This is a CUDA-compatible wrapper for Auburn's popular [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) library. It allows for the high-performance generation of various noise types directly on the GPU within CUDA kernels.
 
